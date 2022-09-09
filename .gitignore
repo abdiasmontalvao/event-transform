@@ -1,0 +1,3 @@
+output_bucket
+temp_bucket/**
+*.pyc
