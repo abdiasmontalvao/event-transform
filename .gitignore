@@ -1,3 +1,4 @@
 output_bucket
 temp_bucket/**
 *.pyc
+test/temp_output_bucket
