@@ -1,4 +1,4 @@
-import pathlib, glob
+import pathlib, glob, os
 from pismo.transform.event import EventTransform
 
 SOURCE_PATH = f'{pathlib.Path().resolve()}/ingest_bucket'
@@ -9,6 +9,7 @@ def fix_json_files():
   """
     Fix json files and write in a temp path before start
   """
+  os.makedirs(TEMP_PATH, exist_ok=True)
   source_path_filter_regex = fr'{SOURCE_PATH}/*.json'
   for source_json_path in glob.glob(source_path_filter_regex, recursive=True):
     file_name = source_json_path.split('/')[-1]
