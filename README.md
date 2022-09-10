@@ -1,5 +1,7 @@
 # event-transform
 
+![Production workflow](https://github.com/abdiasmontalvao/event-transform/actions/workflows/merge.yaml/badge.svg?branch=main)
+
 ## About
 This utility can read json files in a directory, remove duplicated events, split event by type and write partitioned by year, month and day using apache parquet.
 
